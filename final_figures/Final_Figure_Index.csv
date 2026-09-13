@@ -1,0 +1,7 @@
+Figure,Purpose
+01_Model_R2_Comparison.png,Comparison of ML and GNN model R²
+02_Four_Property_R2.png,Performance of final four property models
+03_YS_SHAP_Top15.png,Explainable AI feature importance for YS
+04_Pareto_Screening.png,Multi-objective candidate screening
+05_YS_Uncertainty_Distribution.png,Bootstrap model uncertainty
+06_Top10_Property_Comparison.png,Comparison of top candidate properties

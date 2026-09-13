@@ -1,0 +1,14 @@
+numpy
+pandas
+scikit-learn
+xgboost
+shap
+optuna
+matplotlib
+seaborn
+sqlalchemy
+psycopg2-binary
+openpyxl
+joblib
+torch
+torch-geometric

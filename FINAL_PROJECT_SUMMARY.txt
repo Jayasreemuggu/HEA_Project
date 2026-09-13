@@ -1,0 +1,79 @@
+AI-ASSISTED HEA/MPEA MATERIALS DISCOVERY
+========================================
+
+DATA
+----
+Experimental records: 2748
+YS records: 1942
+UTS records: 886
+Elongation records: 1178
+
+MODELS
+------
+YS: XGBoost
+UTS: XGBoost
+Elongation: XGBoost
+Hardness: Extra Trees
+Deep-learning benchmark: GCN
+
+DISCOVERY
+---------
+Hypothetical candidates: 5000
+Pareto candidates: 208
+Low-uncertainty/high-performance candidates: 578
+35D novelty candidates: 5000
+Novelty + performance + low uncertainty candidates:
+277
+
+ACTIVE LEARNING
+---------------
+Random final R2:
+0.6872 +/- 0.0154
+
+Uncertainty final R2:
+0.6953 +/- 0.0150
+
+R2 improvement:
++0.0081
+
+MAE improvement:
++1.22 MPa
+
+RMSE improvement:
++4.08 MPa
+
+INTERPRETATION
+--------------
+The active-learning experiment shows a modest improvement
+for uncertainty-guided acquisition at a matched composition
+budget across five independent seeds.
+
+Candidate properties are machine-learning predictions within
+the explored composition space and require experimental
+validation.
+
+FINAL TOP CANDIDATE
+-------------------
+CAND_03577
+Al43.94Co18.64Cr30.43W6.99
+
+Predicted YS:
+945.68 MPa
+
+Predicted UTS:
+1799.29 MPa
+
+Predicted elongation:
+63.38 %
+
+Predicted hardness:
+669.97 HV
+
+YS uncertainty:
+266.00 MPa
+
+Performance score:
+0.8114
+
+Uncertainty-aware score:
+0.6768

@@ -1,0 +1,59 @@
+Feature,Material_Feature,Mean_Absolute_SHAP,Mean_SHAP,Correlation
+categorical__Test_Type_C,test_type_c,331.0402,63.09706,0.9613127931665137
+numeric__Test_Temperature_C,test_temperature_c,145.26382,17.220543,-0.9417591223786166
+categorical__Test_Type_T,test_type_t,59.313095,7.9651265,-0.9367301564854389
+elements__V_at_pct,v_at_pct,54.393906,25.510132,0.003219513223754374
+elements__Fe_at_pct,fe_at_pct,44.22675,33.16415,-0.034286925362339446
+elements__Al_at_pct,al_at_pct,41.41988,8.426022,0.07019535558113923
+numeric__Density_Calc_g_cm3,density_calc_g_cm3,41.080776,18.667528,-0.15602131912985795
+elements__Mo_at_pct,mo_at_pct,39.831745,5.1120696,-0.5001535236264214
+elements__Ti_at_pct,ti_at_pct,31.058624,2.1132479,-0.7394883462657238
+categorical__Phase_FCC,phase_fcc,23.789366,6.78898,-0.9531656109272104
+elements__Ni_at_pct,ni_at_pct,21.855646,6.683522,-0.5801123239464144
+categorical__Processing_Method_WROUGHT,processing_method_wrought,20.613264,-13.692993,0.8669901983881633
+elements__Co_at_pct,co_at_pct,20.16326,-2.6985729,-0.09378901384496538
+elements__Cr_at_pct,cr_at_pct,19.935276,2.8388069,0.15109465509870776
+categorical__Precipitate_Info_3,precipitate_info_3,18.577738,0.12094191,-0.967457836040428
+categorical__Phase_BCC,phase_bcc,17.121866,5.207957,0.7474949041980439
+elements__Nb_at_pct,nb_at_pct,14.589623,-1.8379639,-0.7337568757412726
+categorical__Processing_Method_ANNEAL,processing_method_anneal,13.847356,-6.562099,-0.9477682207025341
+elements__Cu_at_pct,cu_at_pct,12.776479,3.4373434,-0.5163248831560313
+elements__Zr_at_pct,zr_at_pct,12.23822,-2.5763252,0.6633671378440283
+categorical__Processing_Method_CAST,processing_method_cast,9.4128,-3.7740312,-0.7542247645662646
+numeric__Density_Exp_g_cm3,density_exp_g_cm3,8.569983,-1.9807224,-0.8798119142852555
+numeric__Grain_Size_um,grain_size_um,8.2442875,4.39626,-0.00597461398444602
+numeric__Matrix_Volume_pct,matrix_volume_pct,8.144807,3.7404652,-0.8538291249395014
+categorical__Phase_BCC + Im,phase_bcc + im,5.7042193,0.6654358,0.9793649789633797
+categorical__Alloy_Class_MPEA,alloy_class_mpea,5.6200814,-0.1585695,-0.9238028203494209
+elements__Mn_at_pct,mn_at_pct,5.5238113,0.9550619,0.043019857430980246
+elements__Si_at_pct,si_at_pct,5.315227,-0.42957473,0.8879524666595529
+categorical__Processing_Method_0; 0; 0; 0,processing_method_0; 0; 0; 0,4.8636928,0.7952624,-0.9824546789725863
+categorical__Phase_BCC+Laves,phase_bcc+laves,4.7484684,2.9524472,0.9765373860836265
+elements__Ta_at_pct,ta_at_pct,4.6177807,-2.7380815,-0.7882450137809608
+elements__Sn_at_pct,sn_at_pct,4.3732715,1.3682771,-0.47467462373648683
+categorical__Phase_BCC+B2,phase_bcc+b2,4.3036284,1.5931917,0.9859507477159257
+categorical__Alloy_Class_MPEA/HEA,alloy_class_mpea/hea,3.5073733,-0.9819804,0.9079449194891105
+elements__Hf_at_pct,hf_at_pct,3.4883177,-0.5618043,0.9539645635608412
+categorical__Alloy_Class_FCC HEA,alloy_class_fcc hea,3.3784783,-0.08402466,0.9131690259623931
+elements__C_at_pct,c_at_pct,2.8734872,-0.6959892,-0.5339063144177867
+categorical__Phase_FCC+L12,phase_fcc+l12,2.3382268,-0.49058643,-0.9998049073353502
+categorical__Alloy_Class_HEA/CCA,alloy_class_hea/cca,1.499856,0.2900384,0.8789744301369624
+categorical__Phase_Other,phase_other,1.3537363,1.0293138,-0.9827333951201309
+numeric__Precipitate_Size_nm,precipitate_size_nm,1.2584956,-0.28993767,0.9785758797314958
+elements__W_at_pct,w_at_pct,1.2041339,-0.46086022,-0.9788483484650898
+categorical__Phase_FCC+BCC+B2,phase_fcc+bcc+b2,1.1732304,0.77826077,0.9999926974562002
+categorical__Phase_BCC+Sec.,phase_bcc+sec.,1.1435466,-0.16809478,0.419540533656953
+categorical__Processing_Method_OTHER,processing_method_other,1.0865874,0.8584827,0.7865859907685757
+categorical__Processing_Method_1; 0; 0; 0,processing_method_1; 0; 0; 0,0.99275225,-0.2549362,-0.9999954412456649
+categorical__Phase_FCC+Sec.,phase_fcc+sec.,0.80671746,0.18237694,-0.7238714001113423
+categorical__Processing_Method_Solution treatment performed immediately after casting (as‑cast); 0; Annealing after forging; 1,processing_method_solution treatment performed immediately after casting (as‑cast); 0; annealing after forging; 1,0.7290771,-0.15129417,-0.9999385888610643
+categorical__Phase_FCC+L12+Sec.,phase_fcc+l12+sec.,0.42148823,-0.17211317,0.8908400336442286
+categorical__Phase_B2+Laves+Sec.,phase_b2+laves+sec.,0.35986975,-0.07084943,0.7318217796571111
+elements__Li_at_pct,li_at_pct,0.34318194,0.34318194,-3.1515909150998843e-16
+categorical__Processing_Method_1; 1; 1; 0,processing_method_1; 1; 1; 0,0.31849325,-0.120812766,-0.9921990020087195
+categorical__Phase_Face-centered cubic (FCC) [Classification: 1],phase_face-centered cubic (fcc) [classification: 1],0.2208934,0.009436473,-0.9999853093085274
+elements__Mg_at_pct,mg_at_pct,0.17873569,0.17873569,1.2403432451336914e-16
+categorical__Phase_B2,phase_b2,0.14946988,-0.09430216,-0.9945243336977436
+categorical__Processing_Method_Yes; Yes; Yes; 1,processing_method_yes; yes; yes; 1,0.092380986,0.04665866,0.7421187131342133
+categorical__Phase_FCC+B2,phase_fcc+b2,0.08812927,0.011594726,0.3506274703481355
+categorical__Phase_Face‐centered cubic (FCC) [Classification: 1],phase_face‐centered cubic (fcc) [classification: 1],0.0092784865,-0.0033742287,-0.4771380969605029

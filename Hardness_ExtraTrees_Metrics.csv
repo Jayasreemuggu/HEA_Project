@@ -1,0 +1,9 @@
+Metric,Value
+MAE,64.55815222222222
+RMSE,95.05660180980472
+R2,0.7630587800767966
+Training_Records,567.0
+Testing_Records,150.0
+Unique_Train_Compositions,343.0
+Unique_Test_Compositions,86.0
+Composition_Overlap,0.0

@@ -1,0 +1,11 @@
+Metric,Value
+Experimental records,2748
+Valid experimental compositions,2746
+Composition dimensions,35
+Generated candidates,5000
+Minimum 35D novelty distance,0.46965128475623086
+Median 35D novelty distance,3.216957511742131
+Maximum 35D novelty distance,7.908801934237051
+Median novelty percentile,50.01
+High-performance/high-novelty/low-uncertainty candidates,277
+Top discovery candidate,CAND_03278

@@ -1,0 +1,18 @@
+Property,Element,Mean_Absolute_SHAP,Mean_SHAP,Correlation,Interpretation
+UTS,V,54.39390563964844,25.5101318359375,0.003219513223754374,Higher values tend to push prediction upward
+UTS,FE,44.226749420166016,33.16415023803711,-0.034286925362339446,Higher values tend to push prediction downward
+UTS,AL,41.41987991333008,8.426021575927734,0.07019535558113923,Higher values tend to push prediction upward
+UTS,MO,39.83174514770508,5.112069606781006,-0.5001535236264214,Higher values tend to push prediction downward
+UTS,TI,31.058624267578125,2.113247871398926,-0.7394883462657238,Higher values tend to push prediction downward
+UTS,NI,21.85564613342285,6.6835222244262695,-0.5801123239464144,Higher values tend to push prediction downward
+UTS,CO,20.163259506225586,-2.698572874069214,-0.09378901384496538,Higher values tend to push prediction downward
+UTS,CR,19.93527603149414,2.8388068675994873,0.15109465509870776,Higher values tend to push prediction upward
+UTS,NB,14.58962345123291,-1.8379639387130737,-0.7337568757412726,Higher values tend to push prediction downward
+UTS,CU,12.77647876739502,3.4373433589935303,-0.5163248831560313,Higher values tend to push prediction downward
+UTS,ZR,12.23822021484375,-2.5763251781463623,0.6633671378440283,Higher values tend to push prediction upward
+UTS,MN,5.523811340332031,0.9550619125366211,0.043019857430980246,Higher values tend to push prediction upward
+UTS,SI,5.315227031707764,-0.42957472801208496,0.8879524666595529,Higher values tend to push prediction upward
+UTS,TA,4.617780685424805,-2.738081455230713,-0.7882450137809608,Higher values tend to push prediction downward
+UTS,HF,3.4883177280426025,-0.5618042945861816,0.9539645635608412,Higher values tend to push prediction upward
+UTS,C,2.8734872341156006,-0.695989191532135,-0.5339063144177867,Higher values tend to push prediction downward
+UTS,W,1.2041338682174683,-0.4608602225780487,-0.9788483484650898,Higher values tend to push prediction downward

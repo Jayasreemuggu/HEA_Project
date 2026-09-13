@@ -1,0 +1,73 @@
+Feature,Material_Feature,Mean_Absolute_SHAP,Mean_SHAP,Correlation
+categorical__Phase_FCC,phase_fcc,3.3877213,-0.6505466,0.8858660159674796
+elements__Al_at_pct,al_at_pct,2.096833,-0.08004696,-0.7139388961791407
+elements__Fe_at_pct,fe_at_pct,1.8026068,-0.68843746,0.27579373104115995
+numeric__Density_Calc_g_cm3,density_calc_g_cm3,1.7672415,0.6435992,0.5484533533628181
+numeric__Grain_Size_um,grain_size_um,1.6967381,-0.9414943,-0.03740999299952324
+numeric__Test_Temperature_C,test_temperature_c,1.3861234,-0.09891985,0.8915182687445689
+elements__Cr_at_pct,cr_at_pct,1.3611113,-0.86051047,-0.1843358831731573
+elements__Ni_at_pct,ni_at_pct,1.2619001,-0.06886297,0.6199750856016216
+numeric__Atomic_Size_Mismatch,atomic_size_mismatch,0.95210046,0.41815424,-0.8105546317486388
+elements__Mn_at_pct,mn_at_pct,0.9266303,0.056390233,-0.004587990908970183
+elements__Hf_at_pct,hf_at_pct,0.88581055,0.67784464,0.4468743693871496
+categorical__Processing_Method_WROUGHT,processing_method_wrought,0.8805736,0.35055062,-0.7419695607976102
+elements__Mo_at_pct,mo_at_pct,0.8462396,-0.18539791,-0.773407280929969
+elements__Co_at_pct,co_at_pct,0.7035852,-0.2853714,0.3130439129183161
+numeric__VEC,vec,0.6484439,0.12104375,0.46028348182164774
+elements__Nb_at_pct,nb_at_pct,0.63215846,0.047081012,0.6078081744603496
+elements__Ta_at_pct,ta_at_pct,0.5902191,-0.17707638,-0.25833065211880707
+numeric__Matrix_Volume_pct,matrix_volume_pct,0.5810894,-0.10894489,0.6620054809984568
+elements__Cu_at_pct,cu_at_pct,0.54850703,0.008495008,-0.7230872826994943
+numeric__Mixing_Enthalpy,mixing_enthalpy,0.44061756,-0.039579995,0.7017155943410099
+categorical__Test_Type_C,test_type_c,0.4313424,-0.071817584,0.7725582719402421
+elements__Ti_at_pct,ti_at_pct,0.4055365,0.06374128,0.11831381396547076
+categorical__Phase_BCC,phase_bcc,0.36307886,0.17331684,0.919989901620544
+elements__Zr_at_pct,zr_at_pct,0.3385431,0.072895065,-0.15525772669904087
+elements__V_at_pct,v_at_pct,0.3308987,0.10037122,0.5036517388562421
+numeric__Mixing_Entropy,mixing_entropy,0.32345396,0.09856552,-0.6803860384673666
+categorical__Processing_Method_0; 0; 0; 0,processing_method_0; 0; 0; 0,0.29492897,0.085212424,0.9944579838510299
+numeric__Density_Exp_g_cm3,density_exp_g_cm3,0.24882367,0.06890668,0.28087128999267275
+categorical__Phase_BCC+Laves,phase_bcc+laves,0.23165978,0.10359941,-0.9962842228756729
+categorical__Phase_FCC+Sec.,phase_fcc+sec.,0.21658847,-0.048949633,0.958404763380348
+categorical__Processing_Method_CAST,processing_method_cast,0.19987285,-0.023494393,0.6377926936739992
+categorical__Test_Type_T,test_type_t,0.1976491,-0.0053976774,-0.6850411903676537
+categorical__Alloy_Class_MPEA,alloy_class_mpea,0.19623326,-0.0425828,0.56785468321778
+categorical__Phase_BCC + Im,phase_bcc + im,0.16644266,0.048564892,-0.9874120310445795
+categorical__Processing_Method_1,processing_method_1,0.1636696,-0.0065163886,0.9432715958938519
+elements__Si_at_pct,si_at_pct,0.13399169,-0.080680385,-0.917823122384663
+categorical__Alloy_Class_FCC HEA,alloy_class_fcc hea,0.11975054,-0.071016416,0.08836426106997557
+categorical__Phase_Other,phase_other,0.10459326,0.017004235,-0.9922059856086942
+categorical__Processing_Method_OTHER,processing_method_other,0.09968122,-0.06976136,-0.9177558987973634
+categorical__Processing_Method_ANNEAL,processing_method_anneal,0.09295236,0.00018954968,-0.8037752641296145
+categorical__Phase_BCC+Sec.,phase_bcc+sec.,0.08428536,0.011308372,-0.3570327286337366
+elements__Sn_at_pct,sn_at_pct,0.08356666,0.07388798,-0.9519746054331545
+categorical__Phase_FCC+L12,phase_fcc+l12,0.08080666,-0.03148621,0.9992284723119057
+elements__W_at_pct,w_at_pct,0.06903199,-0.012528765,-0.7283679314815544
+categorical__Precipitate_Info_3,precipitate_info_3,0.06560421,0.008870336,0.9193240014228606
+categorical__Alloy_Class_HEA/CCA,alloy_class_hea/cca,0.05642873,-0.0013659766,-0.8323267197425324
+categorical__Processing_Method_0,processing_method_0,0.0561401,0.003976985,-0.04650098034251442
+categorical__Phase_BCC+B2,phase_bcc+b2,0.050299056,-0.016755316,0.9738059140309796
+categorical__Processing_Method_POWDER,processing_method_powder,0.04915762,0.011855713,-0.938242089711028
+elements__Ca_at_pct,ca_at_pct,0.047161277,-0.047161277,-5.376229771825437e-17
+categorical__Alloy_Class_MPEA/HEA,alloy_class_mpea/hea,0.036975257,-0.0017028265,0.7837983526467526
+categorical__Phase_FCC+BCC+Sec.,phase_fcc+bcc+sec.,0.024768611,-0.013431234,-0.9999984388276569
+numeric__Precipitate_Size_nm,precipitate_size_nm,0.021737443,-0.0118303625,-0.9321673680751176
+"categorical__Precipitate_Info_η Phase (Ni3Ti‐type, hexagonally ordered, coded: 4)","precipitate_info_η phase (ni3ti‐type, hexagonally ordered, coded: 4)",0.01803925,-0.0032733413,-0.9999104911584303
+categorical__Phase_FCC + BCC,phase_fcc + bcc,0.012909404,-0.0046045147,0.9760524348088087
+categorical__Processing_Method_Yes; Yes; Yes; 0,processing_method_yes; yes; yes; 0,0.012832084,-0.0073942905,0.9906759314244338
+categorical__Phase_BCC+FCC,phase_bcc+fcc,0.009979998,-0.008464145,0.8573171097584494
+elements__C_at_pct,c_at_pct,0.009957348,0.005592139,-0.7040881165717544
+categorical__Phase_FCC+HCP,phase_fcc+hcp,0.0098951515,0.0031131932,0.9995001382501689
+categorical__Phase_FCC+B2,phase_fcc+b2,0.009281538,-0.0061210156,0.9113376408085442
+elements__Mg_at_pct,mg_at_pct,0.008665645,0.007815045,-0.33741677532063324
+categorical__Phase_FCC+BCC+B2,phase_fcc+bcc+b2,0.008278894,-0.0051626614,0.41107037026602794
+categorical__Alloy_Class_Cantor-type HEA/MEA,alloy_class_cantor-type hea/mea,0.0076415795,-0.00027016576,-0.01162610226039363
+elements__Zn_at_pct,zn_at_pct,0.0066419095,-0.0066419095,0.0
+categorical__Phase_FCC+BCC,phase_fcc+bcc,0.005978572,-0.0048585166,0.7694196134163996
+categorical__Precipitate_Info_0,precipitate_info_0,0.005105714,0.0005235157,-0.9620182354493355
+categorical__Processing_Method_Yes; Yes; Yes; 1,processing_method_yes; yes; yes; 1,0.002927484,-0.0018906171,0.5910655084136608
+categorical__Phase_Face‐centered cubic (FCC) [Classification: 1],phase_face‐centered cubic (fcc) [classification: 1],0.002481363,-0.0008368529,-0.8527506286918686
+elements__Pd_at_pct,pd_at_pct,0.002276947,-0.002276947,-3.204994286571088e-17
+categorical__Phase_FCC + Im,phase_fcc + im,0.0022195284,0.0010227829,-0.6605994797149464
+categorical__Phase_1,phase_1,0.0018721357,0.0013573257,0.9989005372007554
+categorical__Phase_BCC+HCP,phase_bcc+hcp,0.00083844416,-0.0007876319,0.10223959590382024

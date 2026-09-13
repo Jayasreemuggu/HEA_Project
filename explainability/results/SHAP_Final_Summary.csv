@@ -1,0 +1,5 @@
+Property,Train_Samples,Test_Samples,Unique_Train_Compositions,Unique_Test_Compositions,Transformed_Features
+YS,1514,428,584,146,283
+UTS,722,164,346,87,214
+Elongation,954,224,470,118,249
+Hardness,567,150,343,86,104

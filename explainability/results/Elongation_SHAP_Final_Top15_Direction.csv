@@ -1,0 +1,16 @@
+Feature,Material_Feature,Mean_Absolute_SHAP,Mean_SHAP,Correlation,Direction
+categorical__Phase_FCC,phase_fcc,3.3877213,-0.6505466,0.8858660159674796,Positive
+elements__Al_at_pct,al_at_pct,2.096833,-0.08004696,-0.7139388961791407,Negative
+elements__Fe_at_pct,fe_at_pct,1.8026068,-0.68843746,0.27579373104115995,Positive
+numeric__Density_Calc_g_cm3,density_calc_g_cm3,1.7672415,0.6435992,0.5484533533628181,Positive
+numeric__Grain_Size_um,grain_size_um,1.6967381,-0.9414943,-0.03740999299952324,Negative
+numeric__Test_Temperature_C,test_temperature_c,1.3861234,-0.09891985,0.8915182687445689,Positive
+elements__Cr_at_pct,cr_at_pct,1.3611113,-0.86051047,-0.1843358831731573,Negative
+elements__Ni_at_pct,ni_at_pct,1.2619001,-0.06886297,0.6199750856016216,Positive
+numeric__Atomic_Size_Mismatch,atomic_size_mismatch,0.95210046,0.41815424,-0.8105546317486388,Negative
+elements__Mn_at_pct,mn_at_pct,0.9266303,0.056390233,-0.004587990908970183,Negative
+elements__Hf_at_pct,hf_at_pct,0.88581055,0.67784464,0.4468743693871496,Positive
+categorical__Processing_Method_WROUGHT,processing_method_wrought,0.8805736,0.35055062,-0.7419695607976102,Negative
+elements__Mo_at_pct,mo_at_pct,0.8462396,-0.18539791,-0.773407280929969,Negative
+elements__Co_at_pct,co_at_pct,0.7035852,-0.2853714,0.3130439129183161,Positive
+numeric__VEC,vec,0.6484439,0.12104375,0.46028348182164774,Positive

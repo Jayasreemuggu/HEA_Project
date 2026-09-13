@@ -1,0 +1,8 @@
+metric,value
+MAE_MPa,227.7085307545885
+RMSE_MPa,302.574376263013
+R2,0.6787251625508022
+95pct_interval_coverage,48.831775700934585
+mean_uncertainty_MPa,95.5062255859375
+median_uncertainty_MPa,91.96324157714844
+uncertainty_error_correlation,0.36127612204308074
