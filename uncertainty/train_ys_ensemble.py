@@ -59,7 +59,7 @@ db_connection = psycopg2.connect(
     port=db.DB_PORT,
     database=db.DB_NAME,
     user=db.DB_USER,
-    password=db.DB_PASSWORD
+    password=os.getenv("HEA_DB_PASSWORD", db.DB_PASSWORD)
 )
 
 print("Fresh PostgreSQL connection established!")

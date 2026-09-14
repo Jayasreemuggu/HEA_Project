@@ -173,3 +173,4 @@ UTS_XGBoost_First_Alloy_SHAP.csv
 # Temporary editor files
 *.swp
 *.swo
+*.env

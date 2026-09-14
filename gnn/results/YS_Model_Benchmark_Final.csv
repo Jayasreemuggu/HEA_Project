@@ -1,0 +1,5 @@
+Model,MAE_MPa,RMSE_MPa,R2
+Random Forest,354.81,474.6,0.2095
+Extra Trees,207.18,301.1,0.6818
+XGBoost,198.56,286.06,0.7128
+GNN - Original GCN,257.79,347.32,0.5767

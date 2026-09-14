@@ -1,7 +1,8 @@
+import os
 from sqlalchemy import create_engine, text
 
 DB_USER = "postgres"
-DB_PASSWORD = "jayasree18"
+DB_PASSWORD = os.getenv("HEA_DB_PASSWORD", "")
 DB_HOST = "172.17.160.1"
 DB_PORT = "5432"
 DB_NAME = "HEA_MPEA_DB"
