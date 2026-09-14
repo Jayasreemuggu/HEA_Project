@@ -65,12 +65,103 @@ def get_element_symbol(feature):
 
 def build_prediction_matrix(candidates, model):
 
-    features = list(model.feature_names_in_)
+    # ---------------------------------------------------------
+    # Determine the expected raw feature schema
+    # ---------------------------------------------------------
+
+    if isinstance(model, dict) and "preprocessor" in model:
+        # Bootstrap YS model:
+        # {
+        #     "preprocessor": ...,
+        #     "model": ...,
+        #     "seed": ...
+        # }
+        features = [
+            "al_at_pct",
+            "b_at_pct",
+            "c_at_pct",
+            "co_at_pct",
+            "cr_at_pct",
+            "cu_at_pct",
+            "fe_at_pct",
+            "mn_at_pct",
+            "mo_at_pct",
+            "nb_at_pct",
+            "ni_at_pct",
+            "si_at_pct",
+            "ta_at_pct",
+            "ti_at_pct",
+            "v_at_pct",
+            "w_at_pct",
+            "zr_at_pct",
+            "ag_at_pct",
+            "ca_at_pct",
+            "ga_at_pct",
+            "hf_at_pct",
+            "i_at_pct",
+            "li_at_pct",
+            "mg_at_pct",
+            "nd_at_pct",
+            "o_at_pct",
+            "pd_at_pct",
+            "re_at_pct",
+            "ru_at_pct",
+            "s_at_pct",
+            "sc_at_pct",
+            "sn_at_pct",
+            "t_at_pct",
+            "y_at_pct",
+            "zn_at_pct",
+            "test_temperature_c",
+            "vec",
+            "atomic_size_mismatch",
+            "mixing_enthalpy",
+            "mixing_entropy",
+            "density_exp_g_cm3",
+            "density_calc_g_cm3",
+            "grain_size_um",
+            "precipitate_size_nm",
+            "matrix_volume_pct",
+            "test_type",
+            "phase",
+            "processing_method",
+            "alloy_class",
+            "equilibrium_condition",
+            "single_multiphase",
+            "precipitate_info",
+        ]
+
+    elif hasattr(model, "feature_names_in_"):
+        # Normal sklearn Pipeline / fitted estimator
+        features = list(model.feature_names_in_)
+
+    elif isinstance(model, dict) and "model" in model:
+        estimator = model["model"]
+
+        if hasattr(estimator, "feature_names_in_"):
+            features = list(estimator.feature_names_in_)
+
+        elif "preprocessor" in model and hasattr(
+            model["preprocessor"], "feature_names_in_"
+        ):
+            features = list(model["preprocessor"].feature_names_in_)
+
+        else:
+            raise AttributeError(
+                "Cannot determine feature names from saved model."
+            )
+
+    else:
+        raise AttributeError(
+            "Model has no usable feature schema."
+        )
+
+    # ---------------------------------------------------------
+    # Create raw prediction matrix
+    # ---------------------------------------------------------
 
     X = pd.DataFrame(index=candidates.index)
 
-    # Candidate columns:
-    # Al, Co, Cr, Cu, Fe, ...
     candidate_lookup = {
         str(col).strip().lower(): col
         for col in candidates.columns
@@ -79,7 +170,7 @@ def build_prediction_matrix(candidates, model):
     for feature in features:
 
         # -----------------------------------------------------
-        # ELEMENTS
+        # ELEMENTAL FEATURES
         # -----------------------------------------------------
 
         symbol = get_element_symbol(feature)
@@ -108,35 +199,27 @@ def build_prediction_matrix(candidates, model):
         # -----------------------------------------------------
 
         if feature == "test_temperature_c":
-
             X[feature] = 25.0
 
         elif feature == "test_type":
-
             X[feature] = "T"
 
         elif feature == "phase":
-
             X[feature] = "UNKNOWN"
 
         elif feature == "processing_method":
-
             X[feature] = "CAST"
 
         elif feature == "alloy_class":
-
             X[feature] = "HEA"
 
         elif feature == "equilibrium_condition":
-
             X[feature] = "UNKNOWN"
 
         elif feature == "single_multiphase":
-
             X[feature] = "UNKNOWN"
 
         elif feature == "precipitate_info":
-
             X[feature] = "UNKNOWN"
 
         # -----------------------------------------------------
@@ -155,8 +238,8 @@ def build_prediction_matrix(candidates, model):
             "matrix_volume_pct",
         ]:
 
-            # These are unavailable for hypothetical candidates.
-            # The trained sklearn pipeline performs imputation.
+            # Unavailable for hypothetical candidates.
+            # The fitted sklearn preprocessor performs imputation.
             X[feature] = np.nan
 
         else:
@@ -164,7 +247,6 @@ def build_prediction_matrix(candidates, model):
             X[feature] = np.nan
 
     return X
-
 
 def check_element_mapping(X, model_name):
 

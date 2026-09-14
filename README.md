@@ -5,7 +5,7 @@ An AI-assisted materials-informatics workflow for predicting mechanical properti
 ## Results
 
 - 2,748 experimental HEA/MPEA records
-- XGBoost: Yield Strength R² = 0.7128
+- XGBoost + ExtraTrees Ensemble: Yield Strength R² = 0.7138
 - XGBoost: UTS R² = 0.7260
 - XGBoost: Elongation R² = 0.3445
 - Extra Trees: Hardness R² = 0.6930
@@ -28,21 +28,21 @@ The models were evaluated using composition-grouped validation to prevent the sa
 
 | Property | Final Model | MAE | RMSE | R² |
 |---|---|---:|---:|---:|
-| Yield Strength | XGBoost | 198.56 MPa | 286.06 MPa | **0.7128** |
+| Yield Strength | XGBoost + ExtraTrees Ensemble | 198.89 MPa | 285.60 MPa | **0.7138** |
 | Ultimate Tensile Strength | XGBoost | 289.48 MPa | 423.54 MPa | **0.7260** |
 | Elongation | XGBoost | 12.73% | 17.49% | **0.3445** |
 | Hardness | Extra Trees | 78.45 HV | 108.20 HV | **0.6930** |
 
-### Graph Neural Network Benchmark
+### Yield Strength Model Benchmark
 
-A graph-based representation of alloy compositions was independently evaluated using a GCN model.
+Multiple machine-learning approaches were benchmarked for yield-strength prediction, including tree-based models and a graph-based GCN representation.
 
 | Model | MAE (MPa) | RMSE (MPa) | R² |
 |---|---:|---:|---:|
 | Random Forest | 354.81 | 474.60 | 0.2095 |
-| Extra Trees | 207.18 | 301.10 | 0.6818 |
-| **XGBoost** | **198.56** | **286.06** | **0.7128** |
+| Extra Trees | 207.02 | 296.96 | 0.6905 |
+| **XGBoost + ExtraTrees Ensemble** | **198.89** | **285.60** | **0.7138** |
 | GNN - Original GCN | 257.79 | 347.32 | 0.5767 |
 
-XGBoost achieved the strongest yield-strength performance in this benchmark, while the original GCN served as the retained graph-learning benchmark.
+The XGBoost + ExtraTrees ensemble achieved the strongest yield-strength performance in this benchmark, while the original GCN served as the retained graph-learning benchmark.
 

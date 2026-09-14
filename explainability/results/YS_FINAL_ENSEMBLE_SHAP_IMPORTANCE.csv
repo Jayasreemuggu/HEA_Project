@@ -1,0 +1,278 @@
+feature,mean_abs_SHAP,rank
+numeric__test_temperature_c,181.28263154577718,1
+numeric__nb_at_pct,78.28994152470591,2
+numeric__al_at_pct,75.4335281683362,3
+numeric__ni_at_pct,68.74560695721063,4
+numeric__mo_at_pct,58.21256111822666,5
+numeric__ti_at_pct,54.67535840250515,6
+numeric__cr_at_pct,34.07840880978507,7
+numeric__co_at_pct,28.398727380300198,8
+numeric__density_calc_g_cm3,28.207022917040018,9
+numeric__mn_at_pct,23.47419174011932,10
+categorical__phase_BCC,22.060443405764506,11
+numeric__ta_at_pct,18.33224027392487,12
+numeric__v_at_pct,18.250077157258623,13
+categorical__test_type_C,16.471593953983792,14
+numeric__zr_at_pct,15.20100557191927,15
+numeric__fe_at_pct,15.125478015983665,16
+categorical__precipitate_info_L12,14.323219090978299,17
+categorical__phase_FCC,14.162195102602256,18
+categorical__processing_method_POWDER,13.601896614453464,19
+numeric__grain_size_um,12.901269897156244,20
+categorical__processing_method_WROUGHT,10.231489923065194,21
+categorical__phase_BCC+B2,8.321031504309893,22
+categorical__test_type_T,8.227443268836117,23
+categorical__alloy_class_FCC HEA,7.324336816647368,24
+numeric__si_at_pct,6.404379102976833,25
+categorical__phase_BCC+Sec.,6.1886788902091565,26
+categorical__alloy_class_Cantor-type HEA/MEA,4.962213193263081,27
+categorical__processing_method_CAST,4.959388143378702,28
+numeric__matrix_volume_pct,4.910453970020094,29
+categorical__phase_BCC + Im,4.81427986468956,30
+categorical__phase_FCC+BCC,4.715008830724345,31
+categorical__alloy_class_MPEA,4.53731392211471,32
+numeric__mixing_enthalpy,4.533825920912186,33
+numeric__cu_at_pct,4.226320341899237,34
+numeric__density_exp_g_cm3,3.955068608532051,35
+numeric__c_at_pct,3.555668425402826,36
+numeric__vec,3.2915381096758285,37
+categorical__alloy_class_MPEA/HEA,3.2228888877255626,38
+numeric__mixing_entropy,2.8885484370131143,39
+categorical__phase_BCC+Laves,2.7265711539473476,40
+categorical__alloy_class_HEA/CCA,2.4791256690192967,41
+numeric__hf_at_pct,2.2869026266943684,42
+numeric__atomic_size_mismatch,2.0231050305431184,43
+numeric__w_at_pct,1.9842489168606057,44
+categorical__processing_method_0; 0; 0; 0,1.9182899336652468,45
+categorical__phase_BCC+BCC,1.881817744504103,46
+numeric__mg_at_pct,1.6652922754372916,47
+categorical__phase_BCC+HCP,1.547890256308807,48
+categorical__phase_FCC+Sec.,1.2789638214315728,49
+categorical__equilibrium_condition_SPS,1.2479954972584972,50
+categorical__phase_Other,1.1669462614842092,51
+categorical__processing_method_OTHER,1.1456260989084408,52
+categorical__phase_BCC+Laves+Sec.,0.9608553416636221,53
+categorical__processing_method_0,0.9126735359152874,54
+categorical__equilibrium_condition_AC,0.7457580949976769,55
+categorical__phase_BCC+FCC,0.7036117516620269,56
+categorical__phase_FCC + Im,0.6869389478807015,57
+categorical__processing_method_Yes; Yes; Yes; 0,0.6531152559690124,58
+categorical__phase_FCC+B2+Sec.,0.653063532582009,59
+categorical__processing_method_1,0.6445184950175838,60
+numeric__precipitate_size_nm,0.5543347097233905,61
+categorical__phase_B2,0.5191703468099947,62
+categorical__equilibrium_condition_SPD,0.508404314439325,63
+categorical__processing_method_ANNEAL,0.496953054840128,64
+categorical__phase_FCC+Laves,0.45394913049664476,65
+numeric__li_at_pct,0.4323397789527217,66
+categorical__phase_B2+BCC,0.430200286077296,67
+categorical__precipitate_info_3,0.4234135059268629,68
+categorical__precipitate_info_μ phase (classified as 9),0.4140212481382807,69
+categorical__phase_Body‐Centered Cubic (BCC) (classification code 2),0.35369950897971775,70
+categorical__processing_method_Yes; 0; 0; 0,0.33805115160895693,71
+categorical__processing_method_Button flipped and re-melted five times to achieve compositional homogeneity; 0; Solutionizing treatment in a vacuum-sealed quartz tube followed by water quenching; 1,0.3329140176294302,72
+categorical__phase_2 BCC,0.328273576130204,73
+categorical__phase_BCC+BCC+HCP,0.32809611875438394,74
+categorical__alloy_class_RHEA/RCCA,0.30205829525313505,75
+categorical__phase_FCC+L12,0.2956245568309703,76
+categorical__single_multiphase_M,0.2877861358754508,77
+categorical__phase_Face‐Centered Cubic (FCC) (Classification value: 1),0.2818947357399138,78
+categorical__phase_Face–centered cubic (FCC) (classified as 1),0.27931372847596364,79
+categorical__equilibrium_condition_CR,0.2723514165956989,80
+categorical__phase_Face-centered cubic (FCC) → Code 1,0.26290963095770387,81
+numeric__y_at_pct,0.25562572196327754,82
+categorical__phase_FCC + BCC + B2,0.25212715095768745,83
+categorical__equilibrium_condition_A,0.25158078291236907,84
+categorical__processing_method_0; 1; 0; 1,0.24627312743980662,85
+categorical__phase_BCC+B2+FCC,0.21088705296275836,86
+categorical__phase_Face-centered cubic (FCC) [Classification: 1],0.20762437503506379,87
+categorical__phase_FCC+BCC+B2+Sec.,0.19872863911920172,88
+numeric__zn_at_pct,0.18911333847204548,89
+categorical__processing_method_Yes (1); 0; 0; 0,0.185709880534836,90
+categorical__equilibrium_condition_HIP+A,0.18149410158054033,91
+categorical__precipitate_info_1,0.1662689256595858,92
+categorical__phase_BCC+unknown,0.16383171123273982,93
+categorical__processing_method_Yes; Yes (Cold Rolling); 0; 1,0.15707732282218817,94
+categorical__single_multiphase_S,0.153369343229592,95
+categorical__equilibrium_condition_CR+A,0.14632262937839902,96
+numeric__sc_at_pct,0.14580106829154948,97
+categorical__processing_method_143,0.13074327001029387,98
+categorical__phase_FCC+HCP,0.12499539278895389,99
+categorical__phase_2 BCC+HCP,0.12347488119569354,100
+categorical__processing_method_Yes (1); Yes (1); 0; 1,0.12102865932252214,101
+categorical__phase_FCC+BCC+B2,0.12089949009684028,102
+categorical__phase_3 BCC,0.1188714108431644,103
+categorical__phase_FCC+B2,0.11780225926713644,104
+categorical__phase_Face-Centered Cubic (fcc),0.11541564491853185,105
+categorical__precipitate_info_L1₂ (ordered cubic) → Code 1,0.10617367854426188,106
+categorical__processing_method_1; 1; 1; 1,0.10146806235493415,107
+categorical__processing_method_1 (Yes); 1 (Yes; via cryo-rolling); 0; 1,0.08838273179596283,108
+categorical__processing_method_1; 1; 1; 0,0.0862988119029247,109
+categorical__phase_BCC+M5Si3,0.08502338794411576,110
+categorical__phase_FCC (with L12 precipitates),0.07737205453288604,111
+categorical__phase_BCC+B2+Laves,0.07490069420741935,112
+categorical__processing_method_Yes; Yes; 0; 1,0.07112991255177241,113
+categorical__processing_method_Solution treatment performed immediately after casting (as‑cast); 0; Annealing after forging; 1,0.07051897224034967,114
+categorical__processing_method_0; 0; 0; 1,0.06998001400607343,115
+numeric__re_at_pct,0.069814361488027,116
+categorical__phase_Face‐centered cubic (FCC) [Classification: 1],0.06285665855414584,117
+categorical__processing_method_0; 1; 0; 0,0.06186954915598033,118
+categorical__phase_Face‐centered cubic (FCC),0.06092332257979123,119
+categorical__precipitate_info_L12 (Ordered Ni3Al–type; classified as 1),0.05817929732390667,120
+categorical__phase_Face-centered cubic (fcc) (Code: 1),0.05740994589484319,121
+categorical__phase_B2+Al3Zr5+Laves,0.05459323798129087,122
+categorical__phase_Face‐Centered Cubic (FCC) [Classification: 1],0.05352954607394119,123
+categorical__phase_FCC+L12+B2,0.052085719359163375,124
+numeric__pd_at_pct,0.050239763159089464,125
+categorical__phase_Face‐Centered Cubic (FCC) (Code: 1),0.04965054954166353,126
+numeric__sn_at_pct,0.049503739621791436,127
+categorical__phase_FCC + BCC,0.04756695729117288,128
+categorical__processing_method_Yes; Yes (cold rolling); 0; 1,0.04696310407804698,129
+categorical__phase_1,0.045581992561449444,130
+categorical__processing_method_Yes; Yes (Cold Rolling); 0; 0,0.043299974722213,131
+categorical__phase_γ phase (face‐centered cubic),0.04278560344588939,132
+categorical__processing_method_Yes (1); Cold Rolling: Yes (1); 0; 1,0.04145073451716798,133
+numeric__i_at_pct,0.04095960236396773,134
+categorical__processing_method_Performed with water quenching; Cold‐rolled to 70% thickness reduction; Recrystallized with water quenching; 1,0.04029356060124084,135
+categorical__phase_B2+Sec.,0.037822341574796144,136
+numeric__t_at_pct,0.03780049732108677,137
+categorical__precipitate_info_7,0.037647751828151686,138
+categorical__phase_Face–centered cubic (FCC) [Classification code: 1],0.0371979269318299,139
+categorical__processing_method_Performed with water quenching; Cold‐rolled to 70% thickness reduction; Recrystallized with water quenching; 0,0.036513478294410956,140
+"categorical__precipitate_info_L12 Ni3(Ti,Al)",0.03631465523365818,141
+categorical__phase_Face-centered cubic (FCC) → code 1,0.03545070089645886,142
+categorical__precipitate_info_L12 (ordered Ni3Al),0.03524813649532151,143
+categorical__phase_Face–centered cubic (FCC) (classification value = 1),0.03508976141408292,144
+"categorical__phase_1 (face‑centered cubic, FCC)",0.03437948640760542,145
+categorical__phase_FCC+BCC+Sec.,0.034089926238908504,146
+categorical__precipitate_info_γ′ phase having L12 crystal structure → Code 1 (forms as discontinuous (DP) colonies along grain boundaries),0.03383724035603613,147
+categorical__precipitate_info_B2 (Type–I) [code: 3],0.0337980275478116,148
+categorical__phase_FCC (code 1),0.03354838902087329,149
+categorical__phase_BCC+B2+FCC+Sec.,0.033260394837808314,150
+categorical__processing_method_0; 1; 1; 0,0.0328342887898896,151
+categorical__phase_B2+L12,0.032309813469369786,152
+categorical__phase_BCC+Laves+M5Si3,0.03191234295331959,153
+categorical__phase_Face‑centered cubic (fcc) → Code 1,0.03054412653784842,154
+categorical__phase_Face‑Centered Cubic (FCC),0.029357572164389088,155
+"categorical__phase_1 (Face-Centered Cubic, FCC)",0.028524306493775364,156
+categorical__equilibrium_condition_SPD+A,0.028389352739868964,157
+categorical__phase_Face-centered cubic (FCC) (classification value = 1),0.026941254812615383,158
+categorical__precipitate_info_μ phase (identified by its hexagonal close-packed structure; classified here as 9),0.026253884750448254,159
+categorical__processing_method_Yes (1); 0; Yes (1); 0,0.02517113471044604,160
+categorical__phase_Face-centered cubic (FCC; classification: 1),0.02516136328450806,161
+categorical__processing_method_As cast and homogenized; 1; 1; 1,0.025092229486844874,162
+categorical__phase_1 [face‑centered cubic (fcc)],0.02495524894407417,163
+categorical__phase_B2+Laves+Sec.,0.02485912643885966,164
+categorical__processing_method_0; 1 (Yes); 1 (Yes); 1,0.02436378957260264,165
+categorical__phase_fcc (code 1),0.0243398526183388,166
+categorical__processing_method_Yes; Yes (cold rolling); Yes; 1,0.024312273826768645,167
+categorical__processing_method_1; 1; 0; 0,0.02389928604742131,168
+categorical__processing_method_Yes (1); Yes (1); Yes (1); 0,0.02381991411337319,169
+categorical__phase_Face‑Centered Cubic (FCC) – Dual FCC structure,0.023766090760016394,170
+categorical__phase_FCC+BCC+BCC,0.023706150555093994,171
+categorical__processing_method_1; 1; 0; 1,0.022970195411872656,172
+categorical__precipitate_info_0,0.02171675708787639,173
+categorical__processing_method_0; 1 (Yes); 1 (Yes); 0,0.021616215417461303,174
+categorical__processing_method_0; Primary cold rolling; 1; 1,0.021350312445924672,175
+categorical__precipitate_info_L12 (Classification code: 1 [for L12]),0.02130678645969517,176
+"categorical__precipitate_info_L12 (ordered intermetallic phase, cuboidal morphology, code 1)",0.021241201803068255,177
+categorical__precipitate_info_Ordered δ′ phase with an L12 superlattice (classification code: 1),0.020880483463362503,178
+categorical__precipitate_info_sigma (s phase) [Classification: 6],0.02079961943979197,179
+categorical__processing_method_0; 1; 1; 1,0.0200685735332886,180
+"categorical__precipitate_info_B2 (Type–I B2), Classification code: 3, Morphology: Equiaxed or ellipsoidal (formed along grain boundaries in the partially recrystallized region)",0.01816979467612067,181
+"categorical__phase_Face–Centered Cubic (FCC), Classification code: 1",0.01786688066855499,182
+categorical__precipitate_info_1 (L12),0.01723687015469738,183
+categorical__phase_Face‐centered cubic (fcc),0.016785474932303528,184
+categorical__phase_FCC (code 1) – Ni‐rich solid solution with a face‐centered cubic structure,0.015168128289356443,185
+categorical__phase_Face‐centered cubic (code 1),0.015009742726014682,186
+categorical__phase_1 (face‑centered cubic),0.015002855997739525,187
+categorical__phase_Body‐Centered Cubic (BCC),0.014998091528598968,188
+categorical__processing_method_As cast and homogenized; 1; Solution treatment at 1150 °C for 2 min; 0,0.014686090174392812,189
+categorical__precipitate_info_Ordered L12 phase [Classification: L12 = 1],0.01459433166122799,190
+categorical__precipitate_info_L12 nanoparticles (Classification code: 1),0.014508853152301916,191
+categorical__phase_B2+Al3Zr5,0.013995927591629608,192
+categorical__precipitate_info_HCP-Ti,0.013789072564375917,193
+categorical__precipitate_info_Ordered L12 precipitate (Classification value: 1),0.01315989858241645,194
+categorical__phase_Face-centered cubic (FCC),0.012846678742202586,195
+categorical__phase_FCC + BCC + Im,0.012745364627508925,196
+categorical__phase_Face‐centered cubic (FCC) → (classification = 1),0.012397621158923088,197
+categorical__precipitate_info_g' precipitate,0.012135285053289846,198
+numeric__ca_at_pct,0.01210570413764039,199
+categorical__precipitate_info_BCC/B2,0.011813197257881183,200
+categorical__processing_method_1 (Yes); 1 (Yes); 1 (Yes); 1,0.011561257186350949,201
+categorical__phase_FCC+L12+Sec.,0.011302074644308715,202
+categorical__phase_1 (face‐centered cubic),0.010959804976671069,203
+categorical__precipitate_info_L12 (ordered intermetallic),0.010473755449616137,204
+categorical__phase_Body‑Centered Cubic (BCC) – (classification value 2),0.010372644080097495,205
+"categorical__precipitate_info_1 (L12 structure, i.e. γ′ phase)",0.010040294529850863,206
+categorical__processing_method_As cast and homogenized; 1; Solution treatment at 1150 °C for 5 min; 0,0.00979732285616956,207
+categorical__precipitate_info_Ni3Ti intermetallic,0.009783965653532473,208
+categorical__precipitate_info_L12 (ordered intermetallic) [Code 1],0.00915209264421596,209
+categorical__precipitate_info_L12 phase,0.008830146571966726,210
+categorical__phase_Face‐Centered Cubic (FCC) solid solution (Classification: 1 [FCC]),0.008576063070284391,211
+categorical__phase_Face‐centered cubic (FCC) [Code 1],0.008562581251179263,212
+categorical__precipitate_info_L12 (code 1),0.00847078079274506,213
+categorical__precipitate_info_Hexagonal Close‐Packed (HCP) (Code: 10),0.00834790507050212,214
+categorical__processing_method_1 (yes); 1 (yes – hot forging step reducing thickness by 50%); 1 (yes – an annealing treatment applied to achieve a uniform grain structure); 1,0.00828637992529062,215
+categorical__processing_method_Yes (complete material state); Yes; Yes; 1,0.00825858819043475,216
+categorical__processing_method_Performed; Cold rolling; Annealing; 0,0.008096600636799267,217
+"categorical__precipitate_info_L12 nanoparticles (Ni3(Al, Nb)-type) (Classification: 1)",0.007559466387366429,218
+categorical__phase_BCC (code 2),0.007325754122157808,219
+categorical__phase_Face‑Centered Cubic (FCC) → Code 1,0.007127124305618214,220
+categorical__processing_method_1; Cold rolling; Annealing for recrystallization and homogenization; 1,0.00685300828049695,221
+categorical__precipitate_info_L12 phase (classification = 1),0.006471612688186677,222
+categorical__phase_Face‐centered cubic (FCC) → Code 1,0.006451706841628632,223
+categorical__processing_method_1; Cold rolling; Annealing for recrystallization and homogenization; 0,0.005838648185222914,224
+"categorical__precipitate_info_Ordered intermetallic phase (Lh MCINP, analogous to L1₂; classified here as 1)",0.005723551248172765,225
+categorical__processing_method_Yes; Cold rolling; Yes; 1,0.005465535556047413,226
+categorical__precipitate_info_B2,0.005349590917723055,227
+categorical__phase_Disordered face‐centered cubic (FCC) [Classification code: 1],0.0051411324524637285,228
+categorical__processing_method_As cast and homogenized; 1; Solution treatment at 1150 °C for 60 min; 0,0.005138167628668493,229
+categorical__processing_method_Yes (1); Cold Rolling: Yes (1); 0; 0,0.005065399658699996,230
+"categorical__precipitate_info_Mixed BCC/B2 phase [BCC: 7, B2: 3; B2 features observed]",0.00506259909217323,231
+categorical__processing_method_1; 0; 0; 1,0.005049816057296478,232
+categorical__phase_FCC+HCP+Sec.,0.004813745407780329,233
+categorical__phase_Face‐Centered Cubic (FCC) – (Classification code 1),0.004716386643712392,234
+categorical__processing_method_Yes; Yes; Yes; 1,0.004705309029453675,235
+categorical__precipitate_info_B2 (with bcc nano‐precipitates) code 7,0.004675184699863941,236
+categorical__phase_Face‐Centered Cubic (FCC) (Classification: 1),0.004380905606764522,237
+"categorical__phase_1 (Face‐Centered Cubic, FCC)",0.004182568636017367,238
+categorical__phase_Face‐Centered Cubic (FCC) [Classification code: 1],0.0040030495443297304,239
+categorical__precipitate_info_γ′ phase with ordered L12 structure (Classification value: 1),0.0039188759799785875,240
+categorical__phase_Face‐Centered Cubic (FCC) [Classification Code: 1],0.0038430964959876093,241
+categorical__phase_Face‐centered cubic (FCC) [Classification value: 1],0.003785197751639012,242
+categorical__precipitate_info_FCC-Ti phase,0.0035441881453350077,243
+categorical__phase_Face-centered cubic (FCC; classification = 1),0.0033588834586728,244
+"categorical__precipitate_info_FCC → Code 8 (Cu‐rich, nanometer‐scale 'plate‐strip' precipitates confirmed by SAD patterns)",0.0032837861321071337,245
+categorical__phase_Face‑Centered Cubic (FCC) [Classification Code: 1],0.003123042632928184,246
+categorical__precipitate_info_B2 (ordered body‑centered; classified here as 'B2'),0.003001119605305755,247
+categorical__precipitate_info_Ordered L1₂ phase [Classification Code: 1],0.0027165151523501872,248
+"categorical__precipitate_info_L12 (ordered, coherent nanoprecipitates); specifically identified as (Ni,Cu)₃Al [Classification code: 1 for L12]",0.0026170029791061375,249
+categorical__phase_BCC+MC,0.002558890996341377,250
+categorical__precipitate_info_L12 phase → Code 1,0.00242211742221053,251
+categorical__precipitate_info_L12 (classification = 1 as defined for precipitate phases),0.002341336831411001,252
+categorical__precipitate_info_B2 phase,0.002270611901865737,253
+categorical__precipitate_info_B2 [Type I; Classification: 3],0.0020440856574773106,254
+categorical__phase_Face–Centered Cubic (FCC) [Classification: 1],0.0020316999149939613,255
+categorical__precipitate_info_γ′ phase with spherical particles,0.001938484053517594,256
+categorical__precipitate_info_FCC-Ti,0.001868636805045339,257
+categorical__precipitate_info_L12 phase [classified as “1”],0.0017831340550215394,258
+"categorical__precipitate_info_Nano γ′ particles with Ni₃(Al,Ti) crystal structure (L1₂ ordering, classification 1) with spherical particles",0.0017824160451441113,259
+"categorical__precipitate_info_FCC (225, Co and Cr rich)",0.001781202668052614,260
+"categorical__phase_FCC (225, Cu rich)",0.001361992730299726,261
+categorical__phase_Face‐Centered Cubic (FCC) (Classification code: 1),0.0012908156841648158,262
+categorical__processing_method_High temperature homogenization (details not specified); Cold rolling; Annealing for recrystallization and homogenization; 0,0.001202347870604161,263
+categorical__processing_method_Tube-sealed homogenization; 0; 0; 0,0.0011839785166367803,264
+categorical__precipitate_info_B2 (ordered BCC) (precipitate classification: B2 = 3),0.0010155405300734663,265
+categorical__phase_Face‑centered cubic (FCC) [classified as “1” in the scheme],0.0006449935452429162,266
+categorical__phase_Face‑Centered Cubic (FCC) – (classified as 1),0.000588591119088295,267
+categorical__precipitate_info_B2 phase – (classified as 3),0.0002771431099491486,268
+categorical__precipitate_info_B2 phase (code 3),0.00018768628433390286,269
+categorical__phase_Face‑centered cubic (code 1),0.00013590679024351736,270
+numeric__b_at_pct,0.0,271
+numeric__ga_at_pct,0.0,272
+numeric__ag_at_pct,0.0,273
+numeric__s_at_pct,0.0,274
+numeric__ru_at_pct,0.0,275
+numeric__o_at_pct,0.0,276
+numeric__nd_at_pct,0.0,277

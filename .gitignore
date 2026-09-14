@@ -174,3 +174,102 @@ UTS_XGBoost_First_Alloy_SHAP.csv
 *.swp
 *.swo
 *.env
+
+# Local datasets / derived datasets
+HEA_MPEA_ML_Ready_Deduplicated.csv
+data/
+
+# Model binaries
+*.pkl
+*.pt
+*.pth
+
+# Local / generated environments
+.venv/
+.venv-linux/
+venv/
+
+# Experimental YS scripts/results
+GNN_YieldStrength_Improved.py
+train_gnn_ys_improved.py
+gnn/results/GNN_YieldStrength_IMPROVED_*
+gnn_models/
+final_ys_shap_analysis.py
+conformal_ys.py
+feature_selection_ys.py
+improve_features.py
+improve_ys_xgb.py
+phase_engineered_ys.py
+ys_high_strength_weighting.py
+ensemble_ys.py
+analyze_ys_error_groups.py
+train_advanced_ys.py
+YS_Ensemble_Experiment.csv
+YS_Ensemble_Final_Metrics.csv
+YS_Ensemble_Final_Test_Predictions.csv
+YS_Ensemble_GroupKFold_Weight_Selection.csv
+YS_Ensemble_Residual_Analysis.csv
+YS_Error_By_*.csv
+YS_High_Strength_Weighting_Experiment.csv
+YS_Largest_30_Errors_With_Context.csv
+YS_Phase_Engineered_Results.csv
+YS_Phase_Engineered_Test_Predictions.csv
+YS_Feature_Selection_Results.csv
+
+# Local extraction artifacts
+IITH_ML_project_extracted/
+extracted_text/
+extracted_text_v2/
+extracted_text_v3/
+rag_chunks/
+papers/
+
+
+# Local datasets / derived datasets
+HEA_MPEA_ML_Ready_Deduplicated.csv
+data/
+
+# Model binaries
+*.pkl
+*.pt
+*.pth
+
+# Local / generated environments
+.venv/
+.venv-linux/
+venv/
+
+# Experimental YS scripts/results
+GNN_YieldStrength_Improved.py
+train_gnn_ys_improved.py
+gnn/results/GNN_YieldStrength_IMPROVED_*
+gnn_models/
+final_ys_shap_analysis.py
+conformal_ys.py
+feature_selection_ys.py
+improve_features.py
+improve_ys_xgb.py
+phase_engineered_ys.py
+ys_high_strength_weighting.py
+ensemble_ys.py
+analyze_ys_error_groups.py
+train_advanced_ys.py
+YS_Ensemble_Experiment.csv
+YS_Ensemble_Final_Metrics.csv
+YS_Ensemble_Final_Test_Predictions.csv
+YS_Ensemble_GroupKFold_Weight_Selection.csv
+YS_Ensemble_Residual_Analysis.csv
+YS_Error_By_*.csv
+YS_High_Strength_Weighting_Experiment.csv
+YS_Largest_30_Errors_With_Context.csv
+YS_Phase_Engineered_Results.csv
+YS_Phase_Engineered_Test_Predictions.csv
+YS_Feature_Selection_Results.csv
+
+# Local extraction artifacts
+IITH_ML_project_extracted/
+extracted_text/
+extracted_text_v2/
+extracted_text_v3/
+rag_chunks/
+papers/
