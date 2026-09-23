@@ -1,275 +1,60 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
+﻿# Ignore everything by default
+*
 
-# Virtual environments
-.venv/
-.venv-linux/
-venv/
-env/
+# Allow directories needed for Git traversal
+!*/
 
-# Jupyter
-.ipynb_checkpoints/
+# Core project files
+!.gitignore
+!README.md
+!requirements.txt
+!app.py
 
-# IDE
-.vscode/
-.idea/
+# Main dataset used by the project
+!YS_ML_Advanced_Composition_Features.csv
 
-# OS
-.DS_Store
-Thumbs.db
+# Final evaluation / uncertainty outputs
+!YS_CONFORMAL_INTERVAL_RESULTS.csv
+!YS_GROUPED_OOF_PREDICTIONS_WITH_UNCERTAINTY.csv
+!YS_UNCERTAINTY_BY_TARGET_RANGE.csv
 
-# Python/build
-build/
-dist/
-*.egg-info/
+# Final explainability outputs
+!YS_SHAP_CORRECTED_ORIGINAL.csv
+!YS_SHAP_CORRECTED_TOP25.png
 
-# Logs
-*.log
+# Final production model directory
+!models/
+!models/YS_Final_359/
+!models/YS_Final_359/*
 
-# Temporary files
-*.tmp
-*.temp
+# Final source code needed for reproducibility
+!feature_engineering.py
+!ys_predictor.py
 
-# Local databases / locks
-*.lck
-*.lock
+# Final dashboard assets if needed
+!frontend/
+!frontend/*
 
-# Secrets / credentials
+# Explicitly exclude secrets and environments
 .env
 .env.*
-!.env.example
+.venv/
+.venv-linux/
+venv/
 
-# Large/local model artifacts
-# Keep final models locally unless using Git LFS
-*.pkl
-
-# Generated caches
-.cache/
-
-# Local research / extraction artifacts
+# Explicitly exclude research/archive material
+papers/
 extracted_text/
 extracted_text_v2/
 extracted_text_v3/
+IITH_ML_project_extracted/
 rag_chunks/
 rag_chunks_clean/
-optuna_ys_results/
-papers/
+predictions/
+FINAL_HEA_ML_SUBMISSION/
+FINAL_HEA_ML_SUBMISSION.zip
 
-# Local datasets / exploratory outputs
-YS_ML_Dataset.csv
-literature_records.csv
-literature_records_v2.csv
-literature_records_v3.csv
-rag_chunks.csv
-
-# Exploratory YS model outputs
-YS_ExtraTrees_*.csv
-YS_ExtraTrees_*.png
-YS_Model2_*.csv
-YS_Model2_*.png
-YS_Model3_*.csv
-YS_Model3_*.png
-YS_Model4_*.csv
-YS_Model4_*.png
-YS_RF_*.csv
-YS_RF_*.png
-YS_XGBoost_*.csv
-YS_XGBoost_*.png
-
-# Train/test intermediate files
-y_train_*.csv
-y_test_*.csv
-
-# Obsolete / experimental scripts
-active_learning_multiseed.py
-active_learning_ys.py
-diagnose_hardness.py
-evaluate_gnn_ys.py
-evaluate_gnn_ys_v2_exact.py
-gnn_model_v2.py
-train_gnn_ys.py
-train_gnn_ys_v2_exact.py
-optimize_xgb_ys_optuna.py
-fix_ys_uncertainty_candidates.py
-test_elongation_candidates.py
-test_uts_candidates.py
-run_shap_direction_analysis.py
-
-# Optional generated summaries
-*.xlsx
-
-# Remaining local/generated research files
-rag_chunks_clean.csv
-
-# Raw literature papers and source files
-Paper_*.pdf
-Paper_*.zip
-Paper_*.csv
-Paper_*.xlsx
-
-# Old standalone exploratory datasets
-*_ML_Dataset.csv
-*_Model_Comparison.csv
-*_RandomForest_Metrics.csv
-*_RandomForest_Predictions.csv
-*_ExtraTrees_Predictions.csv
-*_Model2_Predictions.csv
-*_Model3_Predictions.csv
-*_Model4_Predictions.csv
-
-# Old standalone exploratory predictions/plots
-*_Model2_*.csv
-*_Model2_*.png
-*_Model3_*.csv
-*_Model3_*.png
-*_Model4_*.csv
-*_Model4_*.png
-*_RF_*.csv
-*_RF_*.png
-
-# Intermediate train/test matrices
-X_train_*.csv
-X_test_*.csv
-
-# Old Optuna output
-YS_XGBoost_Optuna_*.csv
-YS_XGBoost_Optuna_*.json
-
-# Old standalone error-analysis outputs
-YS_Error_Analysis_By_Range.csv
-
-
-# Root-level duplicate/intermediate SHAP outputs
-*_First_Record_SHAP.csv
-*_Individual_SHAP.csv
-
-# Root-level duplicate/intermediate prediction outputs
-Elongation_XGBoost_Predictions.csv
-UTS_XGBoost_Predictions.csv
-Hardness_XGBoost_Predictions.csv
-
-# Obsolete GNN experiment outputs
-GNN_YieldStrength_Metrics.csv
-GNN_YieldStrength_Predictions.csv
-GNN_YieldStrength_V2_EXACT_Metrics.csv
-GNN_YieldStrength_V2_EXACT_Predictions.csv
-
-# Obsolete standalone Hardness XGBoost experiment
-Hardness_XGBoost_*.csv
-Hardness_XGBoost_*.png
-
-# Duplicate root-level explainability outputs
-Elongation_XGBoost_SHAP_*.csv
-Elongation_XGBoost_SHAP_*.png
-Hardness_ExtraTrees_SHAP_*.csv
-Hardness_ExtraTrees_SHAP_*.png
-UTS_XGBoost_SHAP_*.csv
-UTS_XGBoost_SHAP_*.png
-UTS_XGBoost_First_Alloy_SHAP.csv
-
-# Temporary editor files
-*.swp
-*.swo
-*.env
-
-# Local datasets / derived datasets
-HEA_MPEA_ML_Ready_Deduplicated.csv
-data/
-
-# Model binaries
-*.pkl
-*.pt
-*.pth
-
-# Local / generated environments
-.venv/
-.venv-linux/
-venv/
-
-# Experimental YS scripts/results
-GNN_YieldStrength_Improved.py
-train_gnn_ys_improved.py
-gnn/results/GNN_YieldStrength_IMPROVED_*
-gnn_models/
-final_ys_shap_analysis.py
-conformal_ys.py
-feature_selection_ys.py
-improve_features.py
-improve_ys_xgb.py
-phase_engineered_ys.py
-ys_high_strength_weighting.py
-ensemble_ys.py
-analyze_ys_error_groups.py
-train_advanced_ys.py
-YS_Ensemble_Experiment.csv
-YS_Ensemble_Final_Metrics.csv
-YS_Ensemble_Final_Test_Predictions.csv
-YS_Ensemble_GroupKFold_Weight_Selection.csv
-YS_Ensemble_Residual_Analysis.csv
-YS_Error_By_*.csv
-YS_High_Strength_Weighting_Experiment.csv
-YS_Largest_30_Errors_With_Context.csv
-YS_Phase_Engineered_Results.csv
-YS_Phase_Engineered_Test_Predictions.csv
-YS_Feature_Selection_Results.csv
-
-# Local extraction artifacts
-IITH_ML_project_extracted/
-extracted_text/
-extracted_text_v2/
-extracted_text_v3/
-rag_chunks/
-papers/
-
-
-# Local datasets / derived datasets
-HEA_MPEA_ML_Ready_Deduplicated.csv
-data/
-
-# Model binaries
-*.pkl
-*.pt
-*.pth
-
-# Local / generated environments
-.venv/
-.venv-linux/
-venv/
-
-# Experimental YS scripts/results
-GNN_YieldStrength_Improved.py
-train_gnn_ys_improved.py
-gnn/results/GNN_YieldStrength_IMPROVED_*
-gnn_models/
-final_ys_shap_analysis.py
-conformal_ys.py
-feature_selection_ys.py
-improve_features.py
-improve_ys_xgb.py
-phase_engineered_ys.py
-ys_high_strength_weighting.py
-ensemble_ys.py
-analyze_ys_error_groups.py
-train_advanced_ys.py
-YS_Ensemble_Experiment.csv
-YS_Ensemble_Final_Metrics.csv
-YS_Ensemble_Final_Test_Predictions.csv
-YS_Ensemble_GroupKFold_Weight_Selection.csv
-YS_Ensemble_Residual_Analysis.csv
-YS_Error_By_*.csv
-YS_High_Strength_Weighting_Experiment.csv
-YS_Largest_30_Errors_With_Context.csv
-YS_Phase_Engineered_Results.csv
-YS_Phase_Engineered_Test_Predictions.csv
-YS_Feature_Selection_Results.csv
-
-# Local extraction artifacts
-IITH_ML_project_extracted/
-extracted_text/
-extracted_text_v2/
-extracted_text_v3/
-rag_chunks/
-papers/
+# Ignore all old model artifacts
+models/*
+!models/YS_Final_359/
+!models/YS_Final_359/*

@@ -5,3 +5,4 @@
 *.json text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+models/YS_Final_359/*.pkl filter=lfs diff=lfs merge=lfs -text
