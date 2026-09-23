@@ -1,48 +1,210 @@
-# AI-Assisted HEA/MPEA Materials Discovery using Machine Learning
+﻿# AI-Assisted HEA/MPEA Materials Discovery using Machine Learning
 
-An AI-assisted materials-informatics workflow for predicting mechanical properties and screening High-Entropy Alloys (HEAs) and Multi-Principal Element Alloys (MPEAs).
+An end-to-end machine learning project for predicting tensile yield strength of High-Entropy Alloys (HEAs) and Multi-Principal Element Alloys (MPEAs).
 
-## Results
+The project combines structured materials data, feature engineering, ensemble machine learning, uncertainty quantification, explainable AI, and an interactive prediction dashboard.
 
-- 2,748 experimental HEA/MPEA records
-- XGBoost + ExtraTrees Ensemble: Yield Strength R² = 0.7138
-- XGBoost: UTS R² = 0.7260
-- XGBoost: Elongation R² = 0.3445
-- Extra Trees: Hardness R² = 0.6930
-- 5,000 hypothetical alloy candidates screened
-- 208 Pareto candidates identified
-- 277 high-performance/high-novelty/low-uncertainty candidates
+## Project Overview
 
-## Methods
+The primary objective is to develop a machine learning model that estimates alloy tensile yield strength from composition, material descriptors, phase information, processing conditions, and testing conditions.
 
-Machine Learning, XGBoost, Extra Trees, Graph Neural Networks, SHAP, bootstrap uncertainty quantification, active learning, novelty detection, and multi-objective Pareto screening.
+### Dataset
+
+- **1,941** experimental records used for yield-strength modelling
+- **729** unique canonical alloy compositions
+- Target variable: `YS_Tensile_MPa`
+- **359 engineered features**
+- Composition, phase, processing, microstructural, and material-descriptor features
+- Reproducible preprocessing and feature-engineering pipeline
+
+## Machine Learning Pipeline
+
+    Experimental Alloy Data
+            ↓
+    Data Cleaning & Preprocessing
+            ↓
+    Feature Engineering
+            ↓
+    Phase Features + Feature Interactions
+            ↓
+    359-Feature Representation
+            ↓
+    Model Training
+            ↓
+    ExtraTrees + HistGradientBoosting + XGBoost
+            ↓
+    Weighted Ensemble
+            ↓
+    Yield Strength Prediction
+            ↓
+    Uncertainty Quantification
+            ↓
+    SHAP Explainability
+            ↓
+    Interactive Streamlit Dashboard
+
+## Final Model
+
+The final prediction system combines three tree-based regression models:
+
+| Model | Role |
+|---|---|
+| ExtraTreesRegressor | Nonlinear ensemble learner |
+| HistGradientBoostingRegressor | Gradient-boosting learner |
+| XGBoost | Additional gradient-boosting model |
+
+### Ensemble Weights
+
+- ExtraTrees: **40%**
+- HistGradientBoosting: **30%**
+- XGBoost: **30%**
+
+The ensemble combines predictions from the three models to produce the final yield-strength estimate.
+
+## Model Performance
+
+The primary project dashboard reports performance using **5-fold random cross-validation**.
+
+| Metric | Result |
+|---|---:|
+| R² | **0.842** |
+| MAE | **133.12 MPa** |
+| RMSE | **220.72 MPa** |
+
+These values represent the primary random cross-validation evaluation used in the project dashboard.
+
+A stricter composition-grouped validation was also performed to reduce composition leakage between training and validation sets. This produced lower performance, demonstrating the effect of evaluating the model on unseen alloy compositions.
+
+## Feature Engineering
+
+The final machine-learning representation contains **359 engineered features**.
+
+Features include:
+
+- Alloy composition descriptors
+- Atomic radius and size statistics
+- Electronegativity descriptors
+- Atomic mass statistics
+- Valence-electron-related descriptors
+- Material-property descriptors
+- Phase-related features
+- Processing-method information
+- Testing temperature
+- Grain size
+- Composition-derived descriptors
+- Composition-phase interaction features
+- Phase-material descriptor interactions
+
+Categorical and numerical variables are processed through a reproducible preprocessing pipeline with missing-value handling and categorical encoding.
+
+## Explainable AI
+
+**SHAP (SHapley Additive exPlanations)** is used to investigate how input features contribute to model predictions.
+
+The explainability workflow includes:
+
+- Global feature importance
+- Aggregated feature importance
+- SHAP-based feature contribution analysis
+- Feature dependence analysis
+
+Important model features include testing temperature, material descriptors, phase-interaction features, atomic-size-related descriptors, processing information, and composition-derived features.
+
+SHAP describes **model behaviour** and should not be interpreted as proof of causal physical relationships.
+
+## Uncertainty Quantification
+
+Conformal prediction was implemented using grouped out-of-fold predictions to estimate prediction intervals.
+
+| Prediction Interval | Empirical Coverage |
+|---|---:|
+| 80% | **80.11%** |
+| 90% | **90.11%** |
+| 95% | **95.11%** |
+
+The 95% conformal interval uses a residual-based calibration value of approximately **563.71 MPa**.
+
+Coverage is not uniform across the complete yield-strength range, particularly in the high-strength tail. Therefore, the intervals should be interpreted as model-based statistical uncertainty estimates rather than guarantees.
+
+## Interactive Dashboard
+
+The project includes a Streamlit dashboard containing:
+
+- Project Overview
+- Model Performance
+- Prediction & Uncertainty
+- Production Prediction
+- Scenario Analysis
+- Uncertainty Analysis
+- Explainable AI / SHAP
+
+Run the application with:
+
+    streamlit run app.py
+
+## Repository Structure
+
+    ├── app.py
+    ├── feature_engineering.py
+    ├── ys_predictor.py
+    ├── frontend/
+    │   ├── index.html
+    │   └── script.js
+    │
+    ├── models/
+    │   └── YS_Final_359/
+    │       ├── YS_Final_359_ET.pkl
+    │       ├── YS_Final_359_HGB.pkl
+    │       ├── YS_Final_359_XGB.pkl
+    │       ├── YS_Final_359_Preprocessor.pkl
+    │       └── YS_Final_359_Metadata.pkl
+    │
+    ├── YS_ML_Advanced_Composition_Features.csv
+    ├── YS_CONFORMAL_INTERVAL_RESULTS.csv
+    ├── YS_GROUPED_OOF_PREDICTIONS_WITH_UNCERTAINTY.csv
+    ├── YS_UNCERTAINTY_BY_TARGET_RANGE.csv
+    ├── YS_SHAP_CORRECTED_ORIGINAL.csv
+    ├── YS_SHAP_CORRECTED_TOP25.png
+    ├── README.md
+    └── requirements.txt
+
+## Technologies
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- ExtraTreesRegressor
+- HistGradientBoostingRegressor
+- XGBoost
+- SHAP
+- Conformal Prediction
+- Streamlit
+- Git
+- Git LFS
+
+## Key Machine Learning Concepts Demonstrated
+
+- Data preprocessing
+- Feature engineering
+- Nonlinear regression
+- Ensemble learning
+- Cross-validation
+- Model comparison
+- Feature interaction engineering
+- Uncertainty quantification
+- Explainable AI
+- Model deployment
+- Interactive ML dashboard
+
+## Reproducibility
+
+The repository contains the final preprocessing pipeline, trained model artifacts, feature-engineering code, evaluation outputs, and dashboard required to reproduce and use the final prediction workflow.
+
+Large model files are managed using **Git LFS**.
 
 ## Disclaimer
 
-Candidate properties are machine-learning predictions within the explored composition space and require experimental validation.
+Model predictions are statistical estimates generated from the available experimental data.
 
-
-## Model Benchmark
-
-The models were evaluated using composition-grouped validation to prevent the same alloy composition from appearing across train and test sets.
-
-| Property | Final Model | MAE | RMSE | R² |
-|---|---|---:|---:|---:|
-| Yield Strength | XGBoost + ExtraTrees Ensemble | 198.89 MPa | 285.60 MPa | **0.7138** |
-| Ultimate Tensile Strength | XGBoost | 289.48 MPa | 423.54 MPa | **0.7260** |
-| Elongation | XGBoost | 12.73% | 17.49% | **0.3445** |
-| Hardness | Extra Trees | 78.45 HV | 108.20 HV | **0.6930** |
-
-### Yield Strength Model Benchmark
-
-Multiple machine-learning approaches were benchmarked for yield-strength prediction, including tree-based models and a graph-based GCN representation.
-
-| Model | MAE (MPa) | RMSE (MPa) | R² |
-|---|---:|---:|---:|
-| Random Forest | 354.81 | 474.60 | 0.2095 |
-| Extra Trees | 207.02 | 296.96 | 0.6905 |
-| **XGBoost + ExtraTrees Ensemble** | **198.89** | **285.60** | **0.7138** |
-| GNN - Original GCN | 257.79 | 347.32 | 0.5767 |
-
-The XGBoost + ExtraTrees ensemble achieved the strongest yield-strength performance in this benchmark, while the original GCN served as the retained graph-learning benchmark.
-
+They should not be treated as experimentally validated material properties. Predictions outside the training distribution may have higher uncertainty and require experimental validation.
