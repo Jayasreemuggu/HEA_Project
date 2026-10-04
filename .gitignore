@@ -58,3 +58,8 @@ FINAL_HEA_ML_SUBMISSION.zip
 models/*
 !models/YS_Final_359/
 !models/YS_Final_359/*
+
+# Final production deployment model
+!models/YS_FINAL_PRODUCTION/
+!models/YS_FINAL_PRODUCTION/*
+!predict_ys.py
