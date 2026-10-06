@@ -1,8 +1,8 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
-const API_URL = "http://hea-ml-api-v2.eu-north-1.elasticbeanstalk.com";
+const API_URL = "";
 
 const ELEMENTS = [
   "Ag", "Al", "B", "C", "Ca", "Co", "Cr", "Cu", "Fe",
@@ -126,7 +126,7 @@ export default function Home() {
         );
       }
 
-      const response = await fetch(`${API_URL}/predict-material`, {
+      const response = await fetch(`/api/predict-material`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -329,7 +329,7 @@ export default function Home() {
 
               <div>
                 <label className="mb-2 block text-sm text-slate-300">
-                  Test Temperature (°C)
+                  Test Temperature (Â°C)
                 </label>
 
                 <input
@@ -650,11 +650,12 @@ export default function Home() {
         )}
 
         <footer className="mt-10 text-center text-sm text-slate-600">
-          1,941 experimental records · 359 production features ·
-          XGBoost-based ensemble · FastAPI inference
+          1,941 experimental records Â· 359 production features Â·
+          XGBoost-based ensemble Â· FastAPI inference
         </footer>
 
       </div>
     </main>
   );
 }
+
