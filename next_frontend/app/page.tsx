@@ -1,8 +1,8 @@
-﻿"use client";
+"use client";
 
 import { useState } from "react";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "http://hea-ml-api-v2.eu-north-1.elasticbeanstalk.com";
 
 const ELEMENTS = [
   "Ag", "Al", "B", "C", "Ca", "Co", "Cr", "Cu", "Fe",
